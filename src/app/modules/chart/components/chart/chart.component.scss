@@ -1,0 +1,16 @@
+.wrapper-canvas {
+    margin: 24px auto;
+    width: 75%;
+    min-height: 300px;
+    canvas {
+        min-width: 250px;
+        min-height: 250px;
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper-canvas {
+        width: 100%;
+    }
+}

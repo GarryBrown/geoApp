@@ -1,14 +1,31 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>TestTask</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>TestTask</title>
+    <base href="/">
+    <meta name="theme-color" content="#607D8B">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYFMTJ_5Be9n1PNTmzJskZqRWusvEngaM"></script> -->
+  </head>
+
+  <body>
+    <app-root></app-root>
+  </body>
+  <script>
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for (let registration of registrations) {
+        registration.unregister()
+      }
+    })
+  </script>
+
+
+
 </html>

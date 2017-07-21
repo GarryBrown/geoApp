@@ -1,0 +1,30 @@
+$heightHeader: 64px;
+.container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: calc(100% - #{$heightHeader});
+    top: $heightHeader;
+    left: 0;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    md-sidenav {
+        max-width: 240px;
+    }
+    .mat-sidenav-content,
+    md-sidenav {
+        display: flex;
+        overflow: visible;
+    }
+    .scrolling-block {
+        overflow: auto;
+    }
+}
+
+// header heigth will set less for 10px
+@media screen and (max-width: 601px) {
+    .container {
+        height: calc(100% - 56px);
+        top: 56px;
+    }
+}

@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <nav (click)="hideSideNav()">
+    <a [routerLink]="['map']" routerLinkActive="active">
+      <md-icon>map</md-icon>
+      <span>Карта</span>
+    </a>
+    <a [routerLink]="['/geocoder']" routerLinkActive="active">
+      <md-icon>code</md-icon>
+      <span>GeoCoder</span>
+    </a>
+    <a [routerLink]="['/chart']" routerLinkActive="active">
+      <md-icon>show_chart</md-icon>
+      <span>Charts</span>
+    </a>
+  </nav>
+</div>

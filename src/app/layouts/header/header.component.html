@@ -1,0 +1,13 @@
+<md-toolbar color="primary">
+  <nav>
+    <div class="burger">
+      <button md-icon-button (click)="toggle()" *ngIf="!opened" class="open-menu">
+            <md-icon>menu</md-icon>
+          </button>
+      <button md-icon-button (click)="toggle()" *ngIf="opened" class="close-menu">
+            <md-icon>close</md-icon>
+          </button>
+    </div>
+    <div class="logo" routerLink="/"></div>
+  </nav>
+</md-toolbar>

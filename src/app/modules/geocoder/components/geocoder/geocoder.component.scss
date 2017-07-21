@@ -1,0 +1,27 @@
+md-card {
+    margin-bottom: 24px;
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        button {
+            margin-right: 14px;
+            margin-left: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    form {
+        flex-direction: column !important;
+        md-input-container {
+            align-self: stretch;
+            margin: 0;
+            border: 0;
+        }
+        p {
+            margin-top: 14px;
+        }
+    }
+}

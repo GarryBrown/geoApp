@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <md-card>
+    <agm-map [latitude]="lat" [longitude]="lng" (mapClick)="addMarker($event)">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      <agm-marker *ngFor="let marker of markers" [latitude]="marker.coords.lat" [longitude]="marker.coords.lng"></agm-marker>
+    </agm-map>
+  </md-card>
+
+</div>

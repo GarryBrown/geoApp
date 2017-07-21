@@ -1,0 +1,23 @@
+<div class="wrapper">
+
+  <md-card *ngIf="toCodeForm">
+    <form [formGroup]="toCodeForm" (ngSubmit)="encodeSubmit(toCodeForm)" novalidate>
+      <md-input-container>
+        <input mdInput placeholder="Address" formControlName="address">
+      </md-input-container>
+      <button md-raised-button color="accent" [disabled]="!toCodeForm.get('address').value.length">Encode</button>
+      <p> Coords: {{result.latLng}}</p>
+    </form>
+  </md-card>
+
+  <md-card *ngIf="toAddressForm">
+    <form [formGroup]="toAddressForm" (ngSubmit)="decodeSubmit(toAddressForm)" novalidate>
+      <md-input-container>
+        <input mdInput placeholder="Address" formControlName="coords">
+      </md-input-container>
+      <button md-raised-button color="accent" [disabled]="!toAddressForm.get('coords').value.length">Decode</button>
+      <p> Address: {{result.address}}</p>
+    </form>
+  </md-card>
+
+</div>

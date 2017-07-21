@@ -1,5 +1,19 @@
 # TestTask
 
+## Description 
+
+Angular 4 app for Test
+Application has 3 lazyLoadModules:
+ - Map (Map is showed, allow add marker);
+ - Geocoder (It's allow encode/decode coords to address and backwards)
+ - Charts (Show line time of request of decode/encode location google api
+ [only 6 request 'couse google api has query limit error])
+ Application has ServiceWorker, Precache and Mobile UI. Add it to homeScreen of your mobile.
+
+## Demo
+
+ - Firebase Hosting: https://testsm-54d8f.firebaseapp.com/geocoder
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
 
 ## Development server

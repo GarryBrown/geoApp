@@ -11,12 +11,9 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-content: center;
     align-items: center;
-    a {
-        margin-right: 1.2em;
-    }
 }
 
 .burger {
@@ -32,17 +29,4 @@ nav {
     vertical-align: middle;
     background: url("https://angular.io/assets/images/logos/angular/angular.png") no-repeat center center;
     background-size: contain;
-}
-
-.cart-icon {
-    color: #fff;
-}
-
-.dropdown-menu-mobile {
-    display: none;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
 }

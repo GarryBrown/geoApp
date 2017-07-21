@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,  ApplicationRef, OnInit } from '@angular/core';
 
 import { ChartService } from '../../services';
 import { UtilsService } from '../../../../shared';
@@ -38,7 +38,8 @@ export class ChartComponent implements OnInit {
 
   constructor(
     private utilsService: UtilsService,
-    private chartService: ChartService
+    private chartService: ChartService,
+    private applicationRef: ApplicationRef
   ) { }
 
   ngOnInit() {
@@ -74,6 +75,7 @@ export class ChartComponent implements OnInit {
           label: 'Coords to Address'
         }
         this.lineChartData.push(line);
+        this.applicationRef.tick();
       }
     )
   }

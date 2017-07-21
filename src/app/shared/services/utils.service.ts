@@ -18,7 +18,6 @@ export class UtilsService {
   load() {
     return new Promise((resolve, reject) => {
       this.wrapper.load().then(() => {
-        console.log('google script loaded');
         this.geocoder = new google.maps.Geocoder();
         resolve();
       });
